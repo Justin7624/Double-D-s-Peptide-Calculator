@@ -522,6 +522,12 @@
     }
 
     .fill{
+      position:absolute;
+      left:0;
+      top:0;
+      height:100%;
+      width:0%; /* default */
+    
       background:
         linear-gradient(90deg,
           #00e0ff,
@@ -529,11 +535,12 @@
           #ffffff,
           #ff2ea6
         );
+
+  box-shadow:
+    0 0 12px rgba(0,224,255,.4),
+    0 0 20px rgba(255,46,166,.3);
+}
     
-      box-shadow:
-        0 0 12px rgba(0,224,255,.4),
-        0 0 20px rgba(255,46,166,.3);
-    }
     .cursor{
       position:absolute;
       top:-4px;
