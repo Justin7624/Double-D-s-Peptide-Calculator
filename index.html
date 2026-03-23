@@ -204,49 +204,28 @@
 
     .hero-overlay{
       position:absolute;
-      bottom:10px;
-      left:50%;
-      transform:translateX(-50%);
-      text-align:center;
-    }
-    
-    .hero-overlay h1{
-      font-size:1.8rem;
-      letter-spacing:.15em;
-      color:white;
-    
-      text-shadow:
-        0 0 10px rgba(0,224,255,.6),
-        0 0 20px rgba(255,46,166,.4);
-    }
-    
-    .hero-overlay p{
-      font-size:.8rem;
-      color:var(--muted);
-      letter-spacing:.2em;
-    }
-
-    .hero-overlay{
-      position:absolute;
       bottom:0;
       left:0;
       width:100%;
-      padding:14px 20px;
-      background:linear-gradient(to top, rgba(0,0,0,.6), transparent);
+      padding:20px;
+    
+      background:linear-gradient(to top, rgba(0,0,0,.75), transparent);
     }
     
     .hero-row{
       display:flex;
       justify-content:space-between;
       align-items:center;
-      max-width:1200px;
+    
+      max-width:1220px;
       margin:0 auto;
     }
     
     .hero-text h1{
       margin:0;
-      font-size:1.8rem;
-      letter-spacing:.15em;
+      font-family:'Rye', serif;
+      font-size:2.4rem;
+    
       color:white;
     
       text-shadow:
@@ -255,10 +234,10 @@
     }
     
     .hero-text p{
-      margin:4px 0 0;
-      font-size:.75rem;
+      margin-top:6px;
+      font-size:.8rem;
+      letter-spacing:.18em;
       color:var(--muted);
-      letter-spacing:.2em;
     }
     
     .pill{
@@ -275,7 +254,9 @@
       letter-spacing:.05em;
     
       box-shadow:
-        0 0 10px rgba(255,46,166,.3);
+        0 0 10px rgba(255,46,166,.3
+                      
+      margin-left:auto;
     }
 
     .grid{
@@ -317,7 +298,6 @@
       
       transition: transform .2s ease, box-shadow .2s ease;
 }
-    }
 
     .panel::before{
       content:"";
@@ -717,12 +697,6 @@
   
 @media (max-width: 600px){
 
-  .hero-copy{
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    gap:8px;
-  }
 
   .hero-copy h1{
     white-space:nowrap;
@@ -734,40 +708,10 @@
     margin-top:4px;
   }
 
-  .hero-inner{
-    min-height:140px;
-    padding:8px 12px;
-  }
-
   .hero{
     min-height:150px;
   }
 
-}
-
-
-.hero-title-band{
-  border-top:1px solid rgba(255,255,255,.04);
-  border-bottom:1px solid rgba(255,255,255,.06);
-  background:
-    linear-gradient(90deg,
-      rgba(0,40,104,.16) 0%,
-      rgba(8,8,12,.96) 32%,
-      rgba(8,8,12,.96) 68%,
-      rgba(191,30,46,.16) 100%);
-}
-
-.hero-title-wrap{
-  max-width:1220px;
-  margin:0 auto;
-  padding:18px;
-}
-
-.hero-title-row{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:16px;
 }
 
 .hero-title-wrap h1{
