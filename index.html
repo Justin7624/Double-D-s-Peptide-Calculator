@@ -157,7 +157,7 @@
           rgba(0,0,0,.65)
         );
     
-      z-index:1;
+      z-index:2;
     }
 
     .hero::after{
@@ -176,7 +176,7 @@
           rgba(255,46,166,.10) 100%
         );
 
-      z-index:2;
+      z-index:3;
     }
 
     .hero-inner{
@@ -187,7 +187,7 @@
       display:flex;
       align-items:flex-start;
       position:relative;
-      z-index:3;
+      z-index:4;
     }
 
     .hero-copy{
@@ -225,7 +225,7 @@
     .hero-media{
       position:absolute;
       inset:0;
-      z-index:0;
+      z-index:1; /* was 0 */
     }
 
     .hero-media img{
@@ -754,15 +754,17 @@
   <div class="hero-media">
     <img src="header.jpg" alt="DBL Ds">
   </div>
-</header>
 
-  <div class="hero-title-wrap hero-title-row">
-    <div>
-      <h1>DBL Ds</h1>
-      <div class="hero-kicker">PEPTIDE CALCULATOR</div>
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div>
+        <h1>DBL Ds</h1>
+        <div class="hero-kicker">PEPTIDE CALCULATOR</div>
+      </div>
+      <div class="pill">Research Use Only</div>
     </div>
-    <div class="pill">Research Use Only</div>
   </div>
+</header>
 
   <main class="shell">
     <section class="grid">
